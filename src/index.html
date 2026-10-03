@@ -7,14 +7,51 @@
     <title>Hotel management</title>
 </head>
 <body class="">
-    <div class="w-screen h-screen">
-         <div>
-            <div></div>
-            <div>
-               <div><img /><p></p></div>
-               <div><img /><p></p></div> 
+
+    <!-- Top header -->
+    <header class="hidden md:block bg-sky-50 text-xs">
+         <div class="max-w-6xl mx-auto flex justify-between items-center px-10 py-5">
+
+            <!-- Left Side -->
+            <p>Questions?Need Help?call us on (+123) 456 1100</p>
+
+            <!-- Right Side -->
+            <div class="flex justify-between items-center gap-25">
+               <div class="flex items-center gap-2"><img class="h-3.5" src="images/massege.png" /><p>BTP gift card</p></div>
+               <div class="flex items-center gap-2"><img class="h-3.5" src="images/star.png" /><p>loyalty program</p></div> 
             </div>
+
          </div>
-    </div>
+    </header>
+
+    <!-- Middle header -->
+
+    <header class="hidden md:block text-xs ">
+        <div class="max-w-6xl h-35 mx-auto flex justify-between items-center px-10 py-5">
+
+            <!-- Logo and Search bar  -->
+            <div class="flex justify-between items-center gap-20">
+                <img src="images/Best tour plan.png" alt="logo"/>
+                <div>
+                    <input type="text" class="bg-sky-50 p-2.5 w-64 text-[14px] rounded-s-lg" name="search" placeholder="Search location"/>
+                    <button type="button" class="bg-rose-600 px-4 py-2.5 rounded-e-lg">
+                        <img src="images/search.png" alt="search-icon"/>
+                    </button>
+                </div>
+            </div>  
+            
+            <!-- Cart and Profile  -->
+            <div class="flex justify-between items-center gap-8">
+                <a href="!#" class=""><img src="images/shopping-cart.png" alt="cart"/></a>
+                <div class="w-44 flex justify-evenly items-center">
+                    <img src="images/Ellipse 1.png" alt="profile">
+                    <p class="text-xl">Nathan</p>
+                    <a href="!#"><img src="images/Vector (Stroke).png" alt="profile dropdown"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
 </body>
 </html>
+
