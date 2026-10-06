@@ -1,60 +1,483 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
     <title>Hotel management</title>
-</head>
-<body class="">
-
+  </head>
+  <body class="">
     <!-- Top header -->
     <header class="hidden md:block bg-sky-50 text-xs">
-         <div class="max-w-6xl mx-auto flex justify-between items-center px-10 py-5">
+      <div
+        class="max-w-6xl mx-auto flex justify-between items-center px-10 py-5"
+      >
+        <!-- Left Side -->
+        <p>Questions?Need Help?call us on (+123) 456 1100</p>
 
-            <!-- Left Side -->
-            <p>Questions?Need Help?call us on (+123) 456 1100</p>
-
-            <!-- Right Side -->
-            <div class="flex justify-between items-center gap-25">
-               <div class="flex items-center gap-2"><img class="h-3.5" src="images/massege.png" /><p>BTP gift card</p></div>
-               <div class="flex items-center gap-2"><img class="h-3.5" src="images/star.png" /><p>loyalty program</p></div> 
-            </div>
-
-         </div>
+        <!-- Right Side -->
+        <div class="flex justify-between items-center gap-25">
+          <div class="flex items-center gap-2">
+            <img class="h-3.5" src="images/massege.png" alt="message" />
+            <p>BTP gift card</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img class="h-3.5" src="images/star.png" alt="star" />
+            <p>loyalty program</p>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Middle header -->
 
-    <header class="hidden md:block text-xs ">
-        <div class="max-w-6xl h-35 mx-auto flex justify-between items-center px-10 py-5">
+    <header class="hidden md:block text-xs">
+      <div
+        class="max-w-6xl h-35 mx-auto flex justify-between items-center gap-5 px-10 py-5"
+      >
+        <!-- Logo and Search bar  -->
+        <div class="flex justify-between items-center w-1/2 gap-5">
+          <img src="images/Best tour plan.png" alt="logo" />
+          <div>
+            <form class="flex">
+              <label for="search-location" class="hidden"
+                >search location</label
+              >
+              <input
+                type="text"
+                class="bg-sky-50 p-2.5 w-64 text-[14px] rounded-s-lg"
+                name="search-location"
+                placeholder="Search location"
+              />
+              <button
+                type="submit"
+                class="bg-rose-600 px-4 py-2.5 rounded-e-lg"
+              >
+                <img src="images/search.png" alt="search-icon" />
+              </button>
+            </form>
+          </div>
+        </div>
 
-            <!-- Logo and Search bar  -->
-            <div class="flex justify-between items-center gap-20">
-                <img src="images/Best tour plan.png" alt="logo"/>
-                <div>
-                    <form>
-                        <label for="search-location" class="hidden">search location</label>
-                        <input type="text" class="bg-sky-50 p-2.5 w-64 text-[14px] rounded-s-lg" name="search-location" placeholder="Search location"/>
-                        <button type="submit" class="bg-rose-600 px-4 py-2.5 rounded-e-lg">
-                            <img src="images/search.png" alt="search-icon"/>
-                        </button>
-                    </form>    
+        <!-- Cart and Profile  -->
+        <div class="flex justify-between items-center gap-5">
+          <a href="!#" class=""
+            ><img src="images/shopping-cart.png" alt="cart"
+          /></a>
+          <div class="w-44 flex justify-evenly items-center">
+            <img src="images/Ellipse 1.png" alt="profile" />
+            <p class="text-[16px]">Nathan</p>
+            <a href="!#"
+              ><img src="images/Vector (Stroke).png" alt="profile dropdown"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Nevbar Bottom Header -->
+    <nav class="hidden md:block bg-[#0A223D]">
+      <ul
+        class="max-w-6xl mx-auto px-10 py-8 flex justify-between items-center text-white font-bold text-[12px]"
+      >
+        <li><a href="!#">ALL DEALS</a></li>
+        <li><a href="!#">HOTELS</a></li>
+        <li><a href="!#">ACTIVITES</a></li>
+        <li><a href="!#">HOTELDAYPACKAGES</a></li>
+        <li><a href="!#">RESTAURANTS</a></li>
+        <li><a href="!#">EVENTS</a></li>
+        <li><a href="!#">RODRIGUES</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero section -->
+    <main class="bg-sky-50">
+      <div class="max-w-6xl mx-auto px-10 py-4">
+        <p class="text-xs py-5">Home / Flash Offers / Grand Hilton Hotel</p>
+        <img class="pb-1" src="images/Stars.png" alt="rating" />
+        <div class="flex gap-5">
+          <h1 class="font-bold text-3xl">GRAND HILTON HOTEL</h1>
+          <button class="bg-rose-600 px-2 rounded-md text-white text-xs">
+            flash offers
+          </button>
+        </div>
+        <p class="text-xs py-3 tracking-widest">
+          Half-Board/ All Inclusive + Complimentary Activities + Child Stays
+          Free
+        </p>
+      </div>
+
+      <div
+        class="max-w-6xl mx-auto justify-between flex flex-col md:flex-row gap-5 px-10 py-4 text-white"
+      >
+        <img
+          class="md:w-[60%] object-cover"
+          src="images/Rectangle 5.png"
+          alt="image"
+        />
+        <div class="md:w-[40%] flex flex-col justify-between gap-5">
+          <div class="bg-[#0A223D] py-5 px-4 rounded-md">
+            <div class="flex justify-between">
+              <div class="">
+                <p class="text-[11px]">price start as</p>
+                <h2 class="text-2xl font-bold my-0.5">$ 8,500</h2>
+                <p class="text-[11px]">Per room/ night</p>
+              </div>
+              <div>
+                <div class="flex items-center gap-2 mb-1.5">
+                  <img src="images/user.png" alt="logo" />
+                  <p class="text-xs">2x Guests</p>
                 </div>
-            </div>  
+                <div class="flex items-center gap-2">
+                  <img src="images/phone-call.png" alt="logo" />
+                  <p class="text-xs">1X Room</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center my-4">
+              <h2 class="text-2xl font-bold">Quick Booking</h2>
+              <div class="flex items-center gap-1">
+                <img src="images/call-img.png" alt="logo" />
+                <h2 class="text-2xl font-bold">12100</h2>
+              </div>
+            </div>
+            <button class="bg-rose-600 w-full rounded-md font-medium p-2">
+              View Other Options
+            </button>
+          </div>
+          <iframe
+            class="w-full h-45 flex-1 rounded-md"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59171.041549397334!2d71.20426169999999!3d22.0423226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1791268836809!5m2!1sen!2sin"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Detail section -->
+
+      <div>
+        <ul
+          class="max-w-6xl mx-auto flex justify-between p-10 font-bold text-[#0A223D]"
+        >
+          <li><a href="#package">Package Summery</a></li>
+          <li><a href="#hotel Information">Hotel Information</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li>
+            <a href="#facilities & activities">Facilities & Activities</a>
+          </li>
+          <li><a href="#dining & entertainment">Dining & Entertainment</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#questions & answers">Questions & Answers</a></li>
+        </ul>
+
+        <div class="max-w-6xl mx-auto flex justify-between px-10">
+          <h2 class="text-2xl font-semibold text-[#0A223D]">Package Summery</h2>
+        </div>
+
+        <div class="max-w-6xl mx-auto flex justify-between px-10 py-3 gap-10">
+          <div class="bg-white w-[50%] rounded-md">
+            <h2
+              class="bg-[#0A223D] font-semibold text-white p-1.5 px-3 rounded-t-md"
+            >
+              Package Highlights
+            </h2>
+            <div>
+              <ul class="grid grid-cols-2 gap-10 p-8">
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Half Board/ All Inclusive
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Luxurious 5-Star Hotel
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Child Under 11 Years Stay Free
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />LUX* Me Spa
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Banyan An Adult Only Zone
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg-white w-[50%]">
+            <h2
+              class="bg-[#0A223D] font-semibold text-white py-1.5 px-3 rounded-t-md"
+            >
+              Offer Details
+            </h2>
+            <div>
+              <ul class="grid grid-cols-2 gap-10 p-8">
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Half Board/ All Inclusive
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Luxurious 5-Star Hotel
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Child Under 11 Years Stay Free
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />LUX* Me Spa
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Banyan An Adult Only Zone
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="max-w-6xl mx-auto px-10 py-10">
+            <h2
+              class="bg-[#0A223D] font-semibold text-white py-1.5 px-3 rounded-t-md"
+            >
+              Package Summery Details
+            </h2>
+
+            <div class="px-10 py-5 bg-white rounded-md">
+              <div
+                class="grid grid-cols-3 gap-x-25 text-[14px] text-red-600 mb-5"
+              >
+                <h2>Purchase Inclusions</h2>
+                <h2>Complimentary Land Based Activities</h2>
+                <h2>Complimentary Water Based Activities</h2>
+              </div>
+              <ul class="grid grid-cols-3 gap-x-25 gap-y-5">
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Room as per selection
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Half Board or All Inclusive Meal
+                  Plan
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Complimentary Land & Water
+                  activities
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Child Under 11 years old stays
+                  free
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Free Wi-Fi
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Free Secure Parking
+                </li>
+
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Gym
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Beach Volley
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Table tennis
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Soccer balls
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Yoga
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Unlimited access to driving
+                  range
+                </li>
+
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Water skiing
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Windsurfing
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Pedal boats
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Kayaking
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Aqua Gym
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Glass bottom boat trips
+                </li>
+              </ul>
+
+              <div
+                class="grid grid-cols-3 gap-x-25 text-[14px] text-red-600 mt-10 mb-5"
+              >
+                <h2>Meal Plan Available</h2>
+                <h2>Entertainment</h2>
+                <h2>Check In & Check Out</h2>
+              </div>
+
+              <ul class="grid grid-cols-3 gap-x-25 gap-y-5">
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Half Board
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />All Inclusive
+                </li>
+
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Live music
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />DJ & Mauritian Dance Show
+                </li>
+
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Check In Time 14:00
+                </li>
+                <li class="flex items-center gap-2.5 text-xs">
+                  <img src="images/Group.png" />Check Out Time 11:00
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Other package section -->
+
+    <h2 class="text-5xl font-bold my-8" align="center">Other Packages</h2>
+
+    <div class="max-w-6xl mx-auto flex md:flex-row flex-col gap-5 px-10 my-10">
+        
+        <div class="md:w-[60%] flex md:flex-row flex-col text-white">
             
-            <!-- Cart and Profile  -->
-            <div class="flex justify-between items-center gap-8">
-                <a href="!#" class=""><img src="images/shopping-cart.png" alt="cart"/></a>
-                <div class="w-44 flex justify-evenly items-center">
-                    <img src="images/Ellipse 1.png" alt="profile">
-                    <p class="text-xl">Nathan</p>
-                    <a href="!#"><img src="images/Vector (Stroke).png" alt="profile dropdown"></a>
+            <img class="md:w-[50%] h-full object-cover rounded-s-md" src="images/Rectangle 20.png">
+            
+            <div class="bg-[#0A223D] p-10 rounded-e-md">
+                <img class="mb-2" src="images/Stars.png" alt="rating">
+                <h2>Hotel Blue Haven</h2>
+
+                <p class="text-[14px] my-5">
+                    Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+                </p>
+
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/map-pin.png"><p>1749 Wheeler Ridge Delaware</p></div>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/user.png"><p>2 x Guests</p></div>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/home.png"><p>1 x Room</p></div>
+                
+                <p class="mt-5 text-xs"><del>$10,500</del></p>
+                <div class="flex justify-between">
+                    <h2 class="text-2xl">$8,500</h2>
+                    <button class="bg-rose-600 p-2 rounded-md">Book now</button>
                 </div>
             </div>
         </div>
-    </header>
 
-</body>
+        <div class="flex flex-col">
+            <img class="w-full h-[50%] object-cover" src="images/Rectangle 20 (1).png">
+            <div class="bg-[#0A223D] h-[50%] p-5 text-white rounded-b-md">
+                <h2 class="text-2xl my-3.5 font-bold">LUX* Belle Mare</h2>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/map-pin.png"><p>1749 Wheeler Ridge Delaware</p></div>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/user.png"><p>2 x Guests</p></div>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/home.png"><p>1 x Room</p></div>
+            
+                <p class="mt-5 text-xs"><del>$10,500</del></p>
+                <div class="flex justify-between">
+                    <h2 class="text-2xl">$8,500</h2>
+                    <button class="bg-rose-600 p-2 rounded-md">Book now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="max-w-6xl mx-auto flex md:flex-row flex-col justify-between gap-5 px-10 py-5">
+        <div class="flex flex-col">
+            <img class="w-full h-[50%] object-cover" src="images/Rectangle 20 (2).png">
+            <div class="bg-[#0A223D] h-[50%] p-5 text-white rounded-b-md">
+                <h2 class="text-2xl my-3.5 font-bold">LUX* Belle Mare</h2>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/map-pin.png"><p>1749 Wheeler Ridge Delaware</p></div>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/user.png"><p>2 x Guests</p></div>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/home.png"><p>1 x Room</p></div>
+            
+                <p class="mt-5 text-xs"><del>$10,500</del></p>
+                <div class="flex justify-between">
+                    <h2 class="text-2xl">$8,500</h2>
+                    <button class="bg-rose-600 p-2 rounded-md">Book now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col">
+            <img class="w-full h-[50%] object-cover" src="images/Rectangle 20 (3).png">
+            <div class="bg-[#0A223D] h-[50%] p-5 text-white rounded-b-md">
+                <h2 class="text-2xl my-3.5 font-bold">LUX* Belle Mare</h2>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/map-pin.png"><p>1749 Wheeler Ridge Delaware</p></div>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/user.png"><p>2 x Guests</p></div>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/home.png"><p>1 x Room</p></div>
+            
+                <p class="mt-5 text-xs"><del>$10,500</del></p>
+                <div class="flex justify-between">
+                    <h2 class="text-2xl">$8,500</h2>
+                    <button class="bg-rose-600 p-2 rounded-md">Book now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col">
+            <img class="w-full h-[50%] object-cover" src="images/Rectangle 20 (4).png">
+            <div class="bg-[#0A223D] h-[50%] p-5 text-white rounded-b-md">
+                <h2 class="text-2xl my-3.5 font-bold">LUX* Belle Mare</h2>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/map-pin.png"><p>1749 Wheeler Ridge Delaware</p></div>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/user.png"><p>2 x Guests</p></div>
+                <div class="flex items-center gap-2 text-xs mb-2"><img src="images/home.png"><p>1 x Room</p></div>
+            
+                <p class="mt-5 text-xs"><del>$10,500</del></p>
+                <div class="flex justify-between">
+                    <h2 class="text-2xl">$8,500</h2>
+                    <button class="bg-rose-600 p-2 rounded-md">Book now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="bg-[#0A223D] ">
+        <div class="max-w-6xl mx-auto flex justify-between px-10 py-10 text-white">
+            <img src="images/Best tour plan (1).png" alt="logo">
+                <ul>
+                    <li><a>All Deals</a></li>
+                    <li><a>Hotels</a></li>
+                    <li><a>Activities</a></li>
+                    <li><a>Spa package</a></li>
+                    <li><a>Hotel day package</a></li>
+                    <li><a>Rastaurents</a></li>
+                    <li><a>Fitness</a></li>
+                    <li><a>Rodrigues</a></li>
+                </ul>
+
+                <ul>
+                    <li><a>About us</a></li>
+                    <li><a>Contact us</a></li>
+                    <li><a>How dose it works?</a></li>
+                    <li><a>Frequently Asked Questions</a></li>
+                    <li><a>Deals mu loyalty programs</a></li>
+                    <li><a>Promot your business on BTP</a></li>    
+                </ul>
+            
+            
+                <ul>
+                    <li><a>Tarm and conditions</a></li>
+                    <li><a>Disclaimer</a></li>
+                    <li><a>Cancellation policy</a></li>
+                    <li><a>Privacy</a></li>   
+                </ul>
+            
+        </div>
+    </footer>
+
+  </body>
 </html>
-
